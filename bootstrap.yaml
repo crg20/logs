@@ -1,0 +1,11 @@
+apiVersion: metalk8s.scality.com/v1alpha2
+kind: BootstrapConfiguration
+networks:
+  controlPlane: 10.0.3.0/24
+  workloadPlane: 10.0.3.0/24
+  pods: 192.168.0.0/17
+  services: 192.168.128.0/17
+ca:
+  minion: 10.0.2.15
+archives:
+  - /metalk8s.iso
